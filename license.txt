@@ -385,4 +385,3 @@ included with WordPress can be freely obtained at the following URL:
 	https://wordpress.org/download/source/
 
 Changes	
-Changes
