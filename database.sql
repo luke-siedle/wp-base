@@ -133,7 +133,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=129 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=134 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -240,8 +240,6 @@ INSERT INTO `wp_options` VALUES (95,'widget_meta','a:2:{i:2;a:1:{s:5:\"title\";s
 INSERT INTO `wp_options` VALUES (96,'sidebars_widgets','a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}','yes');
 INSERT INTO `wp_options` VALUES (97,'cron','a:4:{i:1421438100;a:1:{s:20:\"wp_maybe_auto_update\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1421462016;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1421505245;a:1:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}','yes');
 INSERT INTO `wp_options` VALUES (99,'_transient_random_seed','28ba3739b4c6edc54c9d89c82a194aee','yes');
-INSERT INTO `wp_options` VALUES (103,'_site_transient_timeout_theme_roots','1421420625','yes');
-INSERT INTO `wp_options` VALUES (104,'_site_transient_theme_roots','a:3:{s:13:\"twentyfifteen\";s:7:\"/themes\";s:14:\"twentyfourteen\";s:7:\"/themes\";s:14:\"twentythirteen\";s:7:\"/themes\";}','yes');
 INSERT INTO `wp_options` VALUES (106,'_site_transient_update_core','O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:63:\"https://downloads.wordpress.org/release/en_GB/wordpress-4.1.zip\";s:6:\"locale\";s:5:\"en_GB\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:63:\"https://downloads.wordpress.org/release/en_GB/wordpress-4.1.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:3:\"4.1\";s:7:\"version\";s:3:\"4.1\";s:11:\"php_version\";s:5:\"5.2.4\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"4.1\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1421418838;s:15:\"version_checked\";s:3:\"4.1\";s:12:\"translations\";a:0:{}}','yes');
 INSERT INTO `wp_options` VALUES (107,'_site_transient_update_themes','O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1421418845;s:7:\"checked\";a:3:{s:13:\"twentyfifteen\";s:3:\"1.0\";s:14:\"twentyfourteen\";s:3:\"1.3\";s:14:\"twentythirteen\";s:3:\"1.4\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}','yes');
 INSERT INTO `wp_options` VALUES (108,'_site_transient_update_plugins','O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1421418845;s:7:\"checked\";a:2:{s:19:\"akismet/akismet.php\";s:5:\"3.0.4\";s:9:\"hello.php\";s:3:\"1.6\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:2:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":6:{s:2:\"id\";s:2:\"15\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"3.0.4\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.3.0.4.zip\";}s:9:\"hello.php\";O:8:\"stdClass\":6:{s:2:\"id\";s:4:\"3564\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip\";}}}','yes');
@@ -264,6 +262,8 @@ INSERT INTO `wp_options` VALUES (125,'_transient_plugin_slugs','a:2:{i:0;s:19:\"
 INSERT INTO `wp_options` VALUES (126,'_transient_timeout_dash_4077549d03da2e451c8b5f002294ff51','1421462061','no');
 INSERT INTO `wp_options` VALUES (127,'_transient_dash_4077549d03da2e451c8b5f002294ff51','<div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://wordpress.org/news/2014/12/dinah/\'>WordPress 4.1 “Dinah”</a> <span class=\"rss-date\">18th December 2014</span><div class=\"rssSummary\">Version 4.1 of WordPress, named “Dinah” in honor of jazz singer Dinah Washington, is available for download or update in your WordPress dashboard. New features in WordPress 4.1 help you focus on your writing, and the new default theme lets you show it off in style. Introducing Twenty Fifteen Our newest default theme, Twenty Fifteen, is [&hellip;]</div></li></ul></div><div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'http://wptavern.com/the-wordpress-foundation-creates-a-traveling-scholarship-in-memory-of-kim-parsell\'>WPTavern: The WordPress Foundation Creates a Traveling Scholarship in Memory of Kim Parsell</a></li><li><a class=\'rsswidget\' href=\'http://wptavern.com/wpweekly-episode-177-hanging-out-with-godaddy\'>WPTavern: WPWeekly Episode 177 – Hanging Out With GoDaddy</a></li><li><a class=\'rsswidget\' href=\'https://poststatus.com/wordpress-vat-eu/\'>Post Status: WordPress and the new European Union VAT (Value-Added Tax) rules</a></li></ul></div><div class=\"rss-widget\"><ul><li class=\'dashboard-news-plugin\'><span>Popular Plugin:</span> <a href=\'http://wordpress.org/plugins/jetpack/\' class=\'dashboard-news-plugin-link\'>Jetpack by WordPress.com</a>&nbsp;<span>(<a href=\'plugin-install.php?tab=plugin-information&amp;plugin=jetpack&amp;_wpnonce=d1e483246f&amp;TB_iframe=true&amp;width=600&amp;height=800\' class=\'thickbox\' title=\'Jetpack by WordPress.com\'>Install</a>)</span></li></ul></div>','no');
 INSERT INTO `wp_options` VALUES (128,'can_compress_scripts','1','yes');
+INSERT INTO `wp_options` VALUES (131,'_site_transient_timeout_theme_roots','1421423282','yes');
+INSERT INTO `wp_options` VALUES (132,'_site_transient_theme_roots','a:3:{s:13:\"twentyfifteen\";s:7:\"/themes\";s:14:\"twentyfourteen\";s:7:\"/themes\";s:14:\"twentythirteen\";s:7:\"/themes\";}','yes');
 /*!40000 ALTER TABLE `wp_options` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -282,7 +282,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -292,6 +292,8 @@ CREATE TABLE `wp_postmeta` (
 LOCK TABLES `wp_postmeta` WRITE;
 /*!40000 ALTER TABLE `wp_postmeta` DISABLE KEYS */;
 INSERT INTO `wp_postmeta` VALUES (1,2,'_wp_page_template','default');
+INSERT INTO `wp_postmeta` VALUES (2,1,'_edit_lock','1421421498:1');
+INSERT INTO `wp_postmeta` VALUES (3,1,'_edit_last','1');
 /*!40000 ALTER TABLE `wp_postmeta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -331,7 +333,7 @@ CREATE TABLE `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -340,9 +342,10 @@ CREATE TABLE `wp_posts` (
 
 LOCK TABLES `wp_posts` WRITE;
 /*!40000 ALTER TABLE `wp_posts` DISABLE KEYS */;
-INSERT INTO `wp_posts` VALUES (1,1,'2015-01-16 14:33:31','2015-01-16 14:33:31','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!','Hello world!','','publish','open','open','','hello-world','','','2015-01-16 14:33:31','2015-01-16 14:33:31','',0,'http://localhost:8000/?p=1',0,'post','',1);
+INSERT INTO `wp_posts` VALUES (1,1,'2015-01-16 14:33:31','2015-01-16 14:33:31','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!\r\n\r\nThis is some more content!','Hello world!','','publish','open','open','','hello-world','','','2015-01-16 15:18:15','2015-01-16 15:18:15','',0,'http://localhost:8000/?p=1',0,'post','',1);
 INSERT INTO `wp_posts` VALUES (2,1,'2015-01-16 14:33:31','2015-01-16 14:33:31','This is an example page. It\'s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\n\n<blockquote>Hi there! I\'m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin\' caught in the rain.)</blockquote>\n\n...or something like this:\n\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\n\nAs a new WordPress user, you should go to <a href=\"http://localhost:8000/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!','Sample Page','','publish','open','open','','sample-page','','','2015-01-16 14:33:31','2015-01-16 14:33:31','',0,'http://localhost:8000/?page_id=2',0,'page','',0);
 INSERT INTO `wp_posts` VALUES (3,1,'2015-01-16 14:34:08','0000-00-00 00:00:00','','Auto Draft','','auto-draft','open','open','','','','','2015-01-16 14:34:08','0000-00-00 00:00:00','',0,'http://localhost:8000/?p=3',0,'post','',0);
+INSERT INTO `wp_posts` VALUES (4,1,'2015-01-16 15:18:15','2015-01-16 15:18:15','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!\r\n\r\nThis is some more content!','Hello world!','','inherit','open','open','','1-revision-v1','','','2015-01-16 15:18:15','2015-01-16 15:18:15','',1,'http://localhost:8000/?p=4',0,'revision','',0);
 /*!40000 ALTER TABLE `wp_posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -515,4 +518,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-01-16 17:07:23
+-- Dump completed on 2015-01-16 17:18:53
