@@ -1,0 +1,27 @@
+To: ljsiedle@gmail.com
+Subject: New WordPress Site
+Date: Fri, 16 Jan 2015 13:32:58 +0000
+Return-Path: <wordpress@localhost>
+From: WordPress <wordpress@localhost>
+Message-ID: <f3d1becca534e627de48c89020c63a65@localhost>
+X-Priority: 3
+X-Mailer: PHPMailer 5.2.7 (https://github.com/PHPMailer/PHPMailer/)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Your new WordPress site has been successfully set up at:
+
+http://localhost:8000
+
+You can log in to the administrator account with the following information:
+
+Username: ljsiedle
+Password: The password you chose during the install.
+Log in here: http://localhost:8000/wp-login.php
+
+We hope you enjoy your new site. Thanks!
+
+--The WordPress Team
+https://wordpress.org/
+
