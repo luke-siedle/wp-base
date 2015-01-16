@@ -133,7 +133,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=134 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -282,7 +282,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -292,7 +292,7 @@ CREATE TABLE `wp_postmeta` (
 LOCK TABLES `wp_postmeta` WRITE;
 /*!40000 ALTER TABLE `wp_postmeta` DISABLE KEYS */;
 INSERT INTO `wp_postmeta` VALUES (1,2,'_wp_page_template','default');
-INSERT INTO `wp_postmeta` VALUES (2,1,'_edit_lock','1421421498:1');
+INSERT INTO `wp_postmeta` VALUES (2,1,'_edit_lock','1421421549:1');
 INSERT INTO `wp_postmeta` VALUES (3,1,'_edit_last','1');
 /*!40000 ALTER TABLE `wp_postmeta` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -342,7 +342,7 @@ CREATE TABLE `wp_posts` (
 
 LOCK TABLES `wp_posts` WRITE;
 /*!40000 ALTER TABLE `wp_posts` DISABLE KEYS */;
-INSERT INTO `wp_posts` VALUES (1,1,'2015-01-16 14:33:31','2015-01-16 14:33:31','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!\r\n\r\nThis is some more content!','Hello world!','','publish','open','open','','hello-world','','','2015-01-16 15:18:15','2015-01-16 15:18:15','',0,'http://localhost:8000/?p=1',0,'post','',1);
+INSERT INTO `wp_posts` VALUES (1,1,'2015-01-16 14:33:31','2015-01-16 14:33:31','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!\r\n\r\nThis is some more content!','Hello world!','','publish','open','open','','hello-world','','','2015-01-16 15:19:07','2015-01-16 15:19:07','',0,'http://localhost:8000/?p=1',0,'post','',1);
 INSERT INTO `wp_posts` VALUES (2,1,'2015-01-16 14:33:31','2015-01-16 14:33:31','This is an example page. It\'s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\n\n<blockquote>Hi there! I\'m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin\' caught in the rain.)</blockquote>\n\n...or something like this:\n\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\n\nAs a new WordPress user, you should go to <a href=\"http://localhost:8000/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!','Sample Page','','publish','open','open','','sample-page','','','2015-01-16 14:33:31','2015-01-16 14:33:31','',0,'http://localhost:8000/?page_id=2',0,'page','',0);
 INSERT INTO `wp_posts` VALUES (3,1,'2015-01-16 14:34:08','0000-00-00 00:00:00','','Auto Draft','','auto-draft','open','open','','','','','2015-01-16 14:34:08','0000-00-00 00:00:00','',0,'http://localhost:8000/?p=3',0,'post','',0);
 INSERT INTO `wp_posts` VALUES (4,1,'2015-01-16 15:18:15','2015-01-16 15:18:15','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!\r\n\r\nThis is some more content!','Hello world!','','inherit','open','open','','1-revision-v1','','','2015-01-16 15:18:15','2015-01-16 15:18:15','',1,'http://localhost:8000/?p=4',0,'revision','',0);
@@ -518,4 +518,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-01-16 17:18:53
+-- Dump completed on 2015-01-16 17:19:22
