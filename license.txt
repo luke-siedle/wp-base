@@ -389,3 +389,4 @@ included with WordPress can be freely obtained at the following URL:
   Text changes
   Test again
   Test 2
+  Test 3
