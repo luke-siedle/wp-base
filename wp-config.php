@@ -33,6 +33,11 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+// Databases will be auto-generated every commit
+define('PRODUCTION_URL', 'http://example.com');
+define('STAGING_URL', 'http://secure.lab19digital.com/staging/lab19/test');
+define('DEVELOPMENT_URL', 'http://localhost:8000');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
