@@ -58,7 +58,7 @@ CREATE TABLE `wp_bp_activity` (
 LOCK TABLES `wp_bp_activity` WRITE;
 /*!40000 ALTER TABLE `wp_bp_activity` DISABLE KEYS */;
 INSERT INTO `wp_bp_activity` VALUES (1,1,'members','last_activity','','','',0,NULL,'2015-01-19 14:44:25',0,0,0,0);
-INSERT INTO `wp_bp_activity` VALUES (2,1,'activity','activity_update','<a href=\"http://localhost:8000/members/ljsiedle/\" title=\"ljsiedle\">ljsiedle</a> posted an update','Test','http://localhost:8000/members/ljsiedle/',0,0,'2015-01-19 07:19:29',0,0,0,0);
+INSERT INTO `wp_bp_activity` VALUES (2,1,'activity','activity_update','<a href=\"http://example.com/members/ljsiedle/\" title=\"ljsiedle\">ljsiedle</a> posted an update','Test','http://example.com/members/ljsiedle/',0,0,'2015-01-19 07:19:29',0,0,0,0);
 /*!40000 ALTER TABLE `wp_bp_activity` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -376,8 +376,8 @@ CREATE TABLE `wp_options` (
 
 LOCK TABLES `wp_options` WRITE;
 /*!40000 ALTER TABLE `wp_options` DISABLE KEYS */;
-INSERT INTO `wp_options` VALUES (1,'siteurl','http://localhost:8000','yes');
-INSERT INTO `wp_options` VALUES (2,'home','http://localhost:8000','yes');
+INSERT INTO `wp_options` VALUES (1,'siteurl','http://example.com','yes');
+INSERT INTO `wp_options` VALUES (2,'home','http://example.com','yes');
 INSERT INTO `wp_options` VALUES (3,'blogname','TestSync','yes');
 INSERT INTO `wp_options` VALUES (4,'blogdescription','Just another WordPress site','yes');
 INSERT INTO `wp_options` VALUES (5,'users_can_register','0','yes');
@@ -612,13 +612,13 @@ CREATE TABLE `wp_posts` (
 
 LOCK TABLES `wp_posts` WRITE;
 /*!40000 ALTER TABLE `wp_posts` DISABLE KEYS */;
-INSERT INTO `wp_posts` VALUES (1,1,'2015-01-16 14:33:31','2015-01-16 14:33:31','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!\r\n\r\nThis is some more content!','Goodbye world!','','publish','open','open','','hello-world','','','2015-01-19 14:39:27','2015-01-19 14:39:27','',0,'http://localhost:8000/?p=1',0,'post','',1);
-INSERT INTO `wp_posts` VALUES (2,1,'2015-01-16 14:33:31','2015-01-16 14:33:31','This is an example page. It\'s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\n\n<blockquote>Hi there! I\'m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin\' caught in the rain.)</blockquote>\n\n...or something like this:\n\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\n\nAs a new WordPress user, you should go to <a href=\"http://localhost:8000/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!','Sample Page','','publish','open','open','','sample-page','','','2015-01-16 14:33:31','2015-01-16 14:33:31','',0,'http://localhost:8000/?page_id=2',0,'page','',0);
-INSERT INTO `wp_posts` VALUES (3,1,'2015-01-16 14:34:08','0000-00-00 00:00:00','','Auto Draft','','auto-draft','open','open','','','','','2015-01-16 14:34:08','0000-00-00 00:00:00','',0,'http://localhost:8000/?p=3',0,'post','',0);
-INSERT INTO `wp_posts` VALUES (4,1,'2015-01-16 15:18:15','2015-01-16 15:18:15','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!\r\n\r\nThis is some more content!','Hello world!','','inherit','open','open','','1-revision-v1','','','2015-01-16 15:18:15','2015-01-16 15:18:15','',1,'http://localhost:8000/?p=4',0,'revision','',0);
-INSERT INTO `wp_posts` VALUES (5,1,'2015-01-19 07:17:15','2015-01-19 07:17:15','','Activity','','publish','closed','closed','','activity','','','2015-01-19 07:17:15','2015-01-19 07:17:15','',0,'http://localhost:8000/?page_id=5',0,'page','',0);
-INSERT INTO `wp_posts` VALUES (6,1,'2015-01-19 07:17:15','2015-01-19 07:17:15','','Members','','publish','closed','closed','','members','','','2015-01-19 07:17:15','2015-01-19 07:17:15','',0,'http://localhost:8000/?page_id=6',0,'page','',0);
-INSERT INTO `wp_posts` VALUES (7,1,'2015-01-19 14:39:27','2015-01-19 14:39:27','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!\r\n\r\nThis is some more content!','Goodbye world!','','inherit','open','open','','1-revision-v1','','','2015-01-19 14:39:27','2015-01-19 14:39:27','',1,'http://localhost:8000/index.php/2015/01/19/1-revision-v1/',0,'revision','',0);
+INSERT INTO `wp_posts` VALUES (1,1,'2015-01-16 14:33:31','2015-01-16 14:33:31','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!\r\n\r\nThis is some more content!','Goodbye world!','','publish','open','open','','hello-world','','','2015-01-19 14:39:27','2015-01-19 14:39:27','',0,'http://example.com/?p=1',0,'post','',1);
+INSERT INTO `wp_posts` VALUES (2,1,'2015-01-16 14:33:31','2015-01-16 14:33:31','This is an example page. It\'s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\n\n<blockquote>Hi there! I\'m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin\' caught in the rain.)</blockquote>\n\n...or something like this:\n\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\n\nAs a new WordPress user, you should go to <a href=\"http://example.com/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!','Sample Page','','publish','open','open','','sample-page','','','2015-01-16 14:33:31','2015-01-16 14:33:31','',0,'http://example.com/?page_id=2',0,'page','',0);
+INSERT INTO `wp_posts` VALUES (3,1,'2015-01-16 14:34:08','0000-00-00 00:00:00','','Auto Draft','','auto-draft','open','open','','','','','2015-01-16 14:34:08','0000-00-00 00:00:00','',0,'http://example.com/?p=3',0,'post','',0);
+INSERT INTO `wp_posts` VALUES (4,1,'2015-01-16 15:18:15','2015-01-16 15:18:15','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!\r\n\r\nThis is some more content!','Hello world!','','inherit','open','open','','1-revision-v1','','','2015-01-16 15:18:15','2015-01-16 15:18:15','',1,'http://example.com/?p=4',0,'revision','',0);
+INSERT INTO `wp_posts` VALUES (5,1,'2015-01-19 07:17:15','2015-01-19 07:17:15','','Activity','','publish','closed','closed','','activity','','','2015-01-19 07:17:15','2015-01-19 07:17:15','',0,'http://example.com/?page_id=5',0,'page','',0);
+INSERT INTO `wp_posts` VALUES (6,1,'2015-01-19 07:17:15','2015-01-19 07:17:15','','Members','','publish','closed','closed','','members','','','2015-01-19 07:17:15','2015-01-19 07:17:15','',0,'http://example.com/?page_id=6',0,'page','',0);
+INSERT INTO `wp_posts` VALUES (7,1,'2015-01-19 14:39:27','2015-01-19 14:39:27','Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!\r\n\r\nThis is some more content!','Goodbye world!','','inherit','open','open','','1-revision-v1','','','2015-01-19 14:39:27','2015-01-19 14:39:27','',1,'http://example.com/index.php/2015/01/19/1-revision-v1/',0,'revision','',0);
 /*!40000 ALTER TABLE `wp_posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
