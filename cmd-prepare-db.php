@@ -1,5 +1,12 @@
 <?php
 
+	/*
+		Creates multiple versions of the database
+		for deployment to different environments. These are
+		configured within wp-config.php
+
+	*/
+
 	require "wp-config.php";
 	
 	$dbContents = file_get_contents("./database.sql");
